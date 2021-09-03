@@ -1,0 +1,7 @@
+databaseChangeLog: #параметр в котором находятся миграции
+  - include: # список активных миграций
+      file: db/changelog/changeset/create-author-table.yaml # путь к файлу миграции
+  - include:
+      file: db/changelog/changeset/create-article-table.yaml
+  - include:
+      file: db/changelog/changeset/rename-author-name-to-fullname.yaml

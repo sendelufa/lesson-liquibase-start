@@ -13,7 +13,7 @@ public class Author {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    @Column(nullable = false)
+    @Column(name = "fullname", nullable = false)
     String name;
 
     public Long getId() {
