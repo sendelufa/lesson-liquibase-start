@@ -1,0 +1,14 @@
+spring:
+  liquibase:
+    enabled: false
+  datasource:
+    url: jdbc:h2:file:./db # в корне проект файл бд db.mv.db
+    username: u # имя пользователя консоли
+    password: 1 # пароль консоли
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+  h2:
+    console:
+      enabled: true
